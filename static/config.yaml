@@ -1,0 +1,54 @@
+# config.yaml - Hugo Configuration
+baseURL: 'https://example.com'
+languageCode: 'en-us'
+title: 'My Multilingual Site'
+theme: ''
+
+# Language configuration
+defaultContentLanguage: 'en'
+defaultContentLanguageInSubdir: false
+
+languages:
+  en:
+    languageName: 'English'
+    weight: 1
+    title: 'My Multilingual Site'
+    params:
+      description: 'A multilingual website built with Hugo and Sveltia CMS'
+  es:
+    languageName: 'Español'
+    weight: 2
+    title: 'Mi Sitio Multiidioma'
+    params:
+      description: 'Un sitio web multiidioma construido con Hugo y Sveltia CMS'
+
+# Menu configuration
+menu:
+  main:
+    - identifier: 'home'
+      name: 'Home'
+      url: '/'
+      weight: 1
+    - identifier: 'about'
+      name: 'About'
+      url: '/about/'
+      weight: 2
+    - identifier: 'services'
+      name: 'Services'
+      url: '/services/'
+      weight: 3
+    - identifier: 'contact'
+      name: 'Contact'
+      url: '/contact/'
+      weight: 4
+
+# Markup configuration
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# Build configuration
+build:
+  publishDir: 'public'
+  writeStats: false

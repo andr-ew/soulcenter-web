@@ -1,0 +1,20 @@
+- id: home
+  translation: "Home"
+- id: about
+  translation: "About"
+- id: services
+  translation: "Services"
+- id: contact
+  translation: "Contact"
+- id: language
+  translation: "Language"
+- id: english
+  translation: "English"
+- id: spanish
+  translation: "Spanish"
+- id: read_more
+  translation: "Read More"
+- id: back_to_top
+  translation: "Back to Top"
+- id: site_description
+  translation: "A multilingual website built with Hugo and Sveltia CMS"

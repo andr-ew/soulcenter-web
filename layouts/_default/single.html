@@ -1,0 +1,29 @@
+{{ define "main" }}
+<div class="container">
+    <div class="content">
+        <h1>{{ .Title }}</h1>
+        {{ if .Description }}
+        <p class="description">{{ .Description }}</p>
+        {{ end }}
+        
+        <!-- Contact page specific content -->
+        {{ if eq .Section "contact" }}
+        <div class="contact-info">
+            {{ if .Params.email }}
+            <p><strong>Email:</strong> <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+            {{ end }}
+            {{ if .Params.phone }}
+            <p><strong>{{ i18n "phone" | default "Phone" }}:</strong> <a href="tel:{{ .Params.phone }}">{{ .Params.phone }}</a></p>
+            {{ end }}
+            {{ if .Params.address }}
+            <p><strong>{{ i18n "address" | default "Address" }}:</strong><br>
+            {{ .Params.address | replaceRE "\n" "<br>" | safeHTML }}
+            </p>
+            {{ end }}
+        </div>
+        {{ end }}
+        
+        {{ .Content }}
+    </div>
+</div>
+{{ end }}
