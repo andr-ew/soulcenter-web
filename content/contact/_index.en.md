@@ -1,7 +1,8 @@
-title: "Contact Us"
+---
+title: 'Contact Us'
 description: "Get in touch with our multilingual web development team. We're here to help bring your global web vision to life."
-email: "hello@example.com"
-phone: "+1 (555) 123-4567"
+email: 'hello@example.com'
+phone: '+1 (555) 123-4567'
 address: "123 Web Street\nGlobal City, GC 12345\nUnited States"
 ---
 

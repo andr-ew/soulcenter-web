@@ -1,5 +1,6 @@
-title: "About Us"
-description: "Learn more about our company, mission, and the team behind this multilingual website."
+---
+title: 'About Us'
+description: 'Learn more about our company, mission, and the team behind this multilingual website.'
 ---
 
 # About Our Company

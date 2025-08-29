@@ -1,7 +1,8 @@
-title: "Contáctanos"
-description: "Ponte en contacto con nuestro equipo de desarrollo web multiidioma. Estamos aquí para ayudar a dar vida a tu visión web global."
-email: "hola@example.com"
-phone: "+1 (555) 123-4567"
+---
+title: 'Contáctanos'
+description: 'Ponte en contacto con nuestro equipo de desarrollo web multiidioma. Estamos aquí para ayudar a dar vida a tu visión web global.'
+email: 'hola@example.com'
+phone: '+1 (555) 123-4567'
 address: "123 Calle Web\nCiudad Global, CG 12345\nEstados Unidos"
 ---
 

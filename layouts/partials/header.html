@@ -2,35 +2,27 @@
     <div class="container">
         <nav>
             <a href="{{ "/" | relLangURL }}" class="logo">{{ .Site.Title }}</a>
-            
+
             <ul class="nav-menu">
                 {{ range .Site.Menus.main }}
-                <li>
-                    <a href="{{ .URL | relLangURL }}">{{ i18n .Identifier }}</a>
-                </li>
+                    <li>
+                        <a href="{{ .URL | relLangURL }}">
+                            {{ i18n .Identifier }}</a
+                        >
+                    </li>
                 {{ end }}
             </ul>
-            
+
             <div class="language-switcher">
-                {{ range .Site.Languages }}
-                    {{ if .LanguageName }}
-                    {{ $translation := false }}
-                    <!-- <a href="{{ if $translation }}{{ $translation.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}" -->
-                        <!-- class="{{ if eq .Lang $.Site.Language.Lang }}active{{ end }}" -->
-                        <!-- > -->
-                    <!-- </a> -->
-                    {{ end }}
+                {{ range $.Site.Home.AllTranslations }}
+                    <a
+                        href="{{ .RelPermalink }}"
+                        class="{{ if eq .Lang $.Site.Language.Lang }}
+                            active
+                        {{ end }}"
+                        >{{ .Language.LanguageName }}</a
+                    >
                 {{ end }}
-                    <ul>
-                      {{ range $.Site.Home.AllTranslations }}
-                      <li>
-                        <a 
-                            href="{{ .RelPermalink }}"
-                            class="{{ if eq .Lang $.Site.Language.Lang }}active{{ end }}"
-                        >{{ .Language.LanguageName }}</a>
-                      </li>
-                      {{ end }}
-                    </ul>
             </div>
         </nav>
     </div>

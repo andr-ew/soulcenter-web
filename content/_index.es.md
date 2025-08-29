@@ -1,7 +1,8 @@
-title: "Bienvenido a Mi Sitio Multiidioma"
-description: "Un sitio web multiidioma moderno construido con Hugo y Sveltia CMS"
-hero_title: "Construye Sitios Web Multiidiomas Increíbles"
-hero_subtitle: "Crea sitios estáticos hermosos, rápidos y multiidiomas con Hugo y gestiona el contenido fácilmente con Sveltia CMS."
+---
+title: 'Bienvenido a Mi Sitio Multiidioma'
+description: 'Un sitio web multiidioma moderno construido con Hugo y Sveltia CMS'
+hero_title: 'Construye Sitios Web Multiidiomas Increíbles'
+hero_subtitle: 'Crea sitios estáticos hermosos, rápidos y multiidiomas con Hugo y gestiona el contenido fácilmente con Sveltia CMS.'
 ---
 
 ¡Bienvenido a nuestro sitio web multiidioma! Este sitio demuestra cómo crear una experiencia bilingüe usando el generador de sitios estáticos Hugo y Sveltia CMS para la gestión de contenido.
