@@ -13,14 +13,24 @@
             
             <div class="language-switcher">
                 {{ range .Site.Languages }}
-                {{ if .Get "languageName" }}
-                {{ $translation := $.GetPage.TranslationByLang .Lang }}
-                <a href="{{ if $translation }}{{ $translation.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}"
-                   class="{{ if eq . $.Site.Language }}active{{ end }}">
-                    {{ .Get "languageName" }}
-                </a>
+                    {{ if .LanguageName }}
+                    {{ $translation := false }}
+                    <!-- <a href="{{ if $translation }}{{ $translation.RelPermalink }}{{ else }}{{ "/" | relLangURL }}{{ end }}" -->
+                        <!-- class="{{ if eq .Lang $.Site.Language.Lang }}active{{ end }}" -->
+                        <!-- > -->
+                    <!-- </a> -->
+                    {{ end }}
                 {{ end }}
-                {{ end }}
+                    <ul>
+                      {{ range $.Site.Home.AllTranslations }}
+                      <li>
+                        <a 
+                            href="{{ .RelPermalink }}"
+                            class="{{ if eq .Lang $.Site.Language.Lang }}active{{ end }}"
+                        >{{ .Language.LanguageName }}</a>
+                      </li>
+                      {{ end }}
+                    </ul>
             </div>
         </nav>
     </div>
