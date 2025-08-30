@@ -1,5 +1,5 @@
 ---
-title: Acerca de Nosotros. Edit en Español
+title: Acerca de Nosotros. Edit en Español 2
 description: Aprende más sobre nuestra empresa, misión y el equipo detrás de este sitio web multiidioma.
 ---
 # Acerca de Nuestra Empresa
