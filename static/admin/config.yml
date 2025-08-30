@@ -16,10 +16,11 @@ collections:
       i18n:
           structure: multiple_files
           locales: [en, es]
+          default_locale: en
       files:
           - label: 'Homepage'
             name: 'homepage'
-            file: 'content/_index.md'
+            file: 'content/_index.{{locale}}.md'
             i18n: true
             fields:
                 - {
@@ -54,7 +55,7 @@ collections:
                   }
           - name: 'about'
             label: 'About Page'
-            file: 'content/about/_index.md'
+            file: 'content/about/_index.{{locale}}.md'
             i18n: true
             fields:
                 - {
@@ -77,7 +78,7 @@ collections:
                   }
           - name: 'services'
             label: 'Services Page'
-            file: 'content/services/_index.md'
+            file: 'content/services/_index.{{locale}}.md'
             i18n: true
             fields:
                 - {
@@ -100,7 +101,7 @@ collections:
                   }
           - name: 'contact'
             label: 'Contact Page'
-            file: 'content/contact/_index.md'
+            file: 'content/contact/_index.{{locale}}.md'
             i18n: true
             fields:
                 - {
