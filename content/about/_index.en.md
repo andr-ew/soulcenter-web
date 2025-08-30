@@ -1,8 +1,7 @@
 ---
-title: 'About Us'
-description: 'Learn more about our company, mission, and the team behind this multilingual website.'
+title: About Us
+description: Learn more about our company, mission, and the team behind this multilingual website.
 ---
-
 # About Our Company
 
 We are a forward-thinking company dedicated to creating exceptional multilingual web experiences. Our team combines technical expertise with creative design to deliver websites that truly connect with global audiences.

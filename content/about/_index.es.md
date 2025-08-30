@@ -1,8 +1,7 @@
 ---
-title: 'Acerca de Nosotros'
-description: 'Aprende más sobre nuestra empresa, misión y el equipo detrás de este sitio web multiidioma.'
+title: Acerca de Nosotros. Edit en Español 2
+description: Aprende más sobre nuestra empresa, misión y el equipo detrás de este sitio web multiidioma.
 ---
-
 # Acerca de Nuestra Empresa
 
 Somos una empresa visionaria dedicada a crear experiencias web multiidiomas excepcionales. Nuestro equipo combina experiencia técnica con diseño creativo para entregar sitios web que realmente conectan con audiencias globales.
