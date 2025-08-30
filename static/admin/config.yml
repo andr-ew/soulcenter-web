@@ -14,7 +14,7 @@ collections:
     - name: 'pages'
       label: 'Pages'
       i18n:
-          structure: single_file
+          structure: multiple_files
           locales: [en, es]
       files:
           - label: 'Homepage'
