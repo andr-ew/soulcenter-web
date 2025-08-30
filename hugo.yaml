@@ -2,7 +2,6 @@
 baseURL: 'https://example.com'
 languageCode: 'en-us'
 title: 'My Multilingual Site'
-theme: ''
 
 # Language configuration
 defaultContentLanguage: 'en'

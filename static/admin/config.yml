@@ -1,5 +1,6 @@
 backend:
-    name: git-gateway
+    name: github
+    repo: andr-ew/my-multilingual-site # Path to your GitHub repository
     branch: main
 
 media_folder: 'static/images'
