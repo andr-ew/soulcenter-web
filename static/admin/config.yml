@@ -14,18 +14,7 @@ i18n:
 collections:
     - name: 'pages'
       label: 'Pages'
-      folder: 'content'
-      create: false
       i18n: true
-      fields:
-          - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-          - {
-                label: 'Description',
-                name: 'description',
-                widget: 'text',
-                i18n: true,
-            }
-          - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
       files:
           - label: 'Homepage'
             name: 'homepage'
@@ -62,51 +51,90 @@ collections:
                       widget: 'markdown',
                       i18n: true,
                   }
-
-    - name: 'about'
-      label: 'About Page'
-      folder: 'content/about'
-      create: false
-      i18n: true
-      fields:
-          - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-          - {
-                label: 'Description',
-                name: 'description',
-                widget: 'text',
-                i18n: true,
-            }
-          - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
-
-    - name: 'services'
-      label: 'Services Page'
-      folder: 'content/services'
-      create: false
-      i18n: true
-      fields:
-          - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-          - {
-                label: 'Description',
-                name: 'description',
-                widget: 'text',
-                i18n: true,
-            }
-          - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
-
-    - name: 'contact'
-      label: 'Contact Page'
-      folder: 'content/contact'
-      create: false
-      i18n: true
-      fields:
-          - { label: 'Title', name: 'title', widget: 'string', i18n: true }
-          - {
-                label: 'Description',
-                name: 'description',
-                widget: 'text',
-                i18n: true,
-            }
-          - { label: 'Email', name: 'email', widget: 'string', i18n: true }
-          - { label: 'Phone', name: 'phone', widget: 'string', i18n: true }
-          - { label: 'Address', name: 'address', widget: 'text', i18n: true }
-          - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+          - name: 'about'
+            label: 'About Page'
+            file: 'content/about/_index.md'
+            i18n: true
+            fields:
+                - {
+                      label: 'Title',
+                      name: 'title',
+                      widget: 'string',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'text',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Body',
+                      name: 'body',
+                      widget: 'markdown',
+                      i18n: true,
+                  }
+          - name: 'services'
+            label: 'Services Page'
+            file: 'content/services/_index.md'
+            i18n: true
+            fields:
+                - {
+                      label: 'Title',
+                      name: 'title',
+                      widget: 'string',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'text',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Body',
+                      name: 'body',
+                      widget: 'markdown',
+                      i18n: true,
+                  }
+          - name: 'contact'
+            label: 'Contact Page'
+            file: 'content/contact/_index.md'
+            i18n: true
+            fields:
+                - {
+                      label: 'Title',
+                      name: 'title',
+                      widget: 'string',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'text',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Email',
+                      name: 'email',
+                      widget: 'string',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Phone',
+                      name: 'phone',
+                      widget: 'string',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Address',
+                      name: 'address',
+                      widget: 'text',
+                      i18n: true,
+                  }
+                - {
+                      label: 'Body',
+                      name: 'body',
+                      widget: 'markdown',
+                      i18n: true,
+                  }
