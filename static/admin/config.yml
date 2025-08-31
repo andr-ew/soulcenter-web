@@ -13,11 +13,10 @@ i18n:
 collections:
     - name: 'pages'
       label: 'Pages'
-      # i18n:
-      #     structure: multiple_files
-      #     locales: [en, es]
-      #     default_locale: en
-      i18n: true
+      i18n:
+          structure: multiple_files
+          locales: [en, es]
+          default_locale: en
       files:
           - label: 'Homepage'
             name: 'homepage'
