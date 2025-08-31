@@ -1,8 +1,7 @@
 ---
-title: 'Our Services'
-description: 'Discover our comprehensive range of multilingual web development services designed to help your business reach global audiences.'
+title: Our Services
+description: Discover our comprehensive range of multilingual web development services designed to help your business reach global audiences.
 ---
-
 # Our Services
 
 We offer a comprehensive suite of services designed to help businesses create powerful multilingual web presences that engage audiences across different languages and cultures.

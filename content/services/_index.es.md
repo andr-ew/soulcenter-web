@@ -1,8 +1,7 @@
 ---
-title: 'Nuestros Servicios'
-description: 'Descubre nuestra amplia gama de servicios de desarrollo web multiidioma diseñados para ayudar a tu negocio a alcanzar audiencias globales.'
+title: Nuestros Servicios. Edit en Español 19:12
+description: Descubre nuestra amplia gama de servicios de desarrollo web multiidioma diseñados para ayudar a tu negocio a alcanzar audiencias globales.
 ---
-
 # Nuestros Servicios
 
 Ofrecemos una suite completa de servicios diseñados para ayudar a las empresas a crear presencias web multiidiomas poderosas que involucren audiencias a través de diferentes idiomas y culturas.
