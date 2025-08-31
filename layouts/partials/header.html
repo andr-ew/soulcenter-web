@@ -14,8 +14,7 @@
             </ul>
 
             <div class="language-switcher">
-                <!-- TODO: fix links redirect to homepage, not current page -->
-                {{ range $.Site.Home.AllTranslations }}
+                {{ range .AllTranslations }}
                     <a
                         href="{{ .RelPermalink }}"
                         class="{{ if eq .Lang $.Site.Language.Lang }}
