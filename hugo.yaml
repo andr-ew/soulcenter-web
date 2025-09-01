@@ -1,7 +1,7 @@
 # config.yaml - Hugo Configuration
 baseURL: 'https://example.com'
 languageCode: 'en-us'
-title: 'SoulCenter'
+title: 'Soul-Center'
 
 # Language configuration
 defaultContentLanguage: 'en'
