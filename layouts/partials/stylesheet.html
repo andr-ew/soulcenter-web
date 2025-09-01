@@ -1,0 +1,13 @@
+{{ $options := dict
+    "includePaths" (slice "node_modules" "assets")
+    "transpiler" "libsass"
+    "vars" .vars
+}}
+{{ with resources.Get .href | toCSS $options | postCSS }}
+    <link
+        rel="stylesheet"
+        href="{{ .RelPermalink }}"
+        integrity="{{ .Data.Integrity }}"
+        crossorigin="anonymous"
+    />
+{{ end }}

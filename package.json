@@ -1,5 +1,5 @@
 {
-    "name": "my-multilingual-site",
+    "name": "soulcenter-web",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -12,6 +12,8 @@
         "prettier": "3.6.2"
     },
     "dependencies": {
-        "prettier-plugin-go-template": "^0.0.15"
+        "postcss-cli": "^11.0.1",
+        "prettier-plugin-go-template": "^0.0.15",
+        "scss-reset": "^1.4.6"
     }
 }
