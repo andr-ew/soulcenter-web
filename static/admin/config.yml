@@ -107,7 +107,7 @@ collections:
                         fields:
                             - label: 'Image'
                               name: 'image'
-                              widget: markdown
+                              widget: image
                             - label: 'Layout'
                               name: 'layout'
                               widget: select
