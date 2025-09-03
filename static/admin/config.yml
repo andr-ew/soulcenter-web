@@ -112,6 +112,13 @@ collections:
                               name: 'layout'
                               widget: select
                               options: ['Process', 'Specializations 1']
+                - label: 'Certifications'
+                  name: 'certifications'
+                  widget: list
+                  field:
+                      label: 'Text: header and bulleted list'
+                      name: 'text'
+                      widget: markdown
           - name: 'services'
             label: 'Services Page'
             file: 'content/services/_index.{{locale}}.md'
