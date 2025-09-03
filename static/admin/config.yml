@@ -59,23 +59,59 @@ collections:
             i18n: true
             fields:
                 - {
-                      label: 'Title',
-                      name: 'title',
-                      widget: 'string',
-                      i18n: true,
-                  }
-                - {
-                      label: 'Description',
+                      label: 'SEO metatag - description - not visible',
                       name: 'description',
                       widget: 'text',
                       i18n: true,
                   }
-                - {
-                      label: 'Body',
-                      name: 'body',
-                      widget: 'markdown',
-                      i18n: true,
-                  }
+                - label: 'Header'
+                  title: 'header'
+                  widget: object
+                  fields:
+                      - label: 'Page Header'
+                        name: 'page_header'
+                        widget: 'text'
+                        i18n: true
+                      - label: 'Header Photo Left'
+                        name: 'header_photo_left'
+                        widget: image
+                        choose_url: false
+                      - label: 'Header Photo Right'
+                        name: 'header_photo_right'
+                        widget: image
+                        choose_url: false
+                - label: 'Sections'
+                  name: 'sections'
+                  widget: list
+                  types:
+                      - label: 'Text'
+                        name: 'text'
+                        widget: object
+                        fields:
+                            - label: 'Text'
+                              name: 'text'
+                              widget: markdown
+                            - label: 'Layout'
+                              name: 'layout'
+                              widget: select
+                              options:
+                                  [
+                                      'Process',
+                                      'Specializations 1',
+                                      'Specializations 2',
+                                      'IFS',
+                                  ]
+                      - label: 'Image'
+                        name: 'image'
+                        widget: object
+                        fields:
+                            - label: 'Image'
+                              name: 'image'
+                              widget: markdown
+                            - label: 'Layout'
+                              name: 'layout'
+                              widget: select
+                              options: ['Process', 'Specializations 1']
           - name: 'services'
             label: 'Services Page'
             file: 'content/services/_index.{{locale}}.md'
