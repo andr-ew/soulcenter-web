@@ -80,38 +80,38 @@ collections:
                         name: 'header_photo_right'
                         widget: image
                         choose_url: false
-                - label: 'Sections'
-                  name: 'sections'
-                  widget: list
-                  types:
-                      - label: 'Text'
-                        name: 'text'
-                        widget: object
-                        fields:
-                            - label: 'Text'
-                              name: 'text'
-                              widget: markdown
-                            - label: 'Layout'
-                              name: 'layout'
-                              widget: select
-                              options:
-                                  [
-                                      'Process',
-                                      'Specializations 1',
-                                      'Specializations 2',
-                                      'IFS',
-                                  ]
-                      - label: 'Image'
-                        name: 'image'
-                        widget: object
-                        fields:
-                            - label: 'Image'
-                              name: 'image'
-                              widget: image
-                            - label: 'Layout'
-                              name: 'layout'
-                              widget: select
-                              options: ['Process', 'Specializations 1']
+                # - label: 'Sections'
+                #   name: 'sections'
+                #   widget: list
+                #   types:
+                #       - label: 'Text'
+                #         name: 'text'
+                #         widget: object
+                #         fields:
+                #             - label: 'Text'
+                #               name: 'text'
+                #               widget: markdown
+                #             - label: 'Layout'
+                #               name: 'layout'
+                #               widget: select
+                #               options:
+                #                   [
+                #                       'Process',
+                #                       'Specializations 1',
+                #                       'Specializations 2',
+                #                       'IFS',
+                #                   ]
+                #       - label: 'Image'
+                #         name: 'image'
+                #         widget: object
+                #         fields:
+                #             - label: 'Image'
+                #               name: 'image'
+                #               widget: image
+                #             - label: 'Layout'
+                #               name: 'layout'
+                #               widget: select
+                #               options: ['Process', 'Specializations 1']
                 - label: 'Certifications'
                   name: 'certifications'
                   widget: list
