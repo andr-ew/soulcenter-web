@@ -9,6 +9,8 @@ sections:
   - type: text
     text: spanish345
     layout: ''
+certifications:
+  - spanish123
 title: Acerca de Nosotros. Edit en Español 2
 ---
 # Acerca de Nuestra Empresa

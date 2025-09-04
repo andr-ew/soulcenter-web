@@ -12,7 +12,7 @@ sections:
     text: test123
     layout: Process
 certifications:
-  - test345
+  - test123
 title: About Us
 ---
 # About Our Company
