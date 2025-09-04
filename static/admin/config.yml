@@ -65,7 +65,7 @@ collections:
                       i18n: true,
                   }
                 - label: 'Header'
-                  title: 'header'
+                  name: 'header'
                   widget: object
                   fields:
                       - label: 'Page Header'
