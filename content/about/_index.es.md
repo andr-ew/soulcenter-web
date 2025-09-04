@@ -1,5 +1,14 @@
 ---
 description: Aprende más sobre nuestra empresa, misión y el equipo detrás de este sitio web multiidioma.
+header:
+  page_header: spanish000
+sections:
+  - type: image
+    layout: ''
+    image: ''
+  - type: text
+    text: spanish345
+    layout: ''
 title: Acerca de Nosotros. Edit en Español 2
 ---
 # Acerca de Nuestra Empresa
