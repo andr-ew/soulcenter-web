@@ -119,7 +119,7 @@ collections:
                 - label: 'Certifications'
                   name: 'certifications'
                   widget: list
-                  i18n: true
+                  i18n: duplicate
                   field:
                       label: 'Text: header and bulleted list'
                       name: 'text'
