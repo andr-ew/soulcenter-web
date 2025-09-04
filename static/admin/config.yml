@@ -67,6 +67,7 @@ collections:
                 - label: 'Header'
                   name: 'header'
                   widget: object
+                  i18n: true
                   fields:
                       - label: 'Page Header'
                         name: 'page_header'
@@ -83,10 +84,12 @@ collections:
                 - label: 'Sections'
                   name: 'sections'
                   widget: list
+                  i18n: true
                   types:
                       - label: 'Text'
                         name: 'text'
                         widget: object
+                        i18n: true
                         fields:
                             - label: 'Text'
                               name: 'text'
@@ -115,9 +118,11 @@ collections:
                 - label: 'Certifications'
                   name: 'certifications'
                   widget: list
+                  i18n: true
                   field:
                       label: 'Text: header and bulleted list'
                       name: 'text'
+                      i18n: true
                       widget: markdown
           - name: 'services'
             label: 'Services Page'
