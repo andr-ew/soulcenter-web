@@ -3,7 +3,7 @@ backend:
     repo: andr-ew/soulcenter-web # Path to your GitHub repository
     branch: main
 
-media_folder: 'static/images'
+media_folder: 'assets/images'
 public_folder: '/images'
 
 i18n:
@@ -55,7 +55,7 @@ collections:
                   }
           - name: 'about'
             label: 'About Page'
-            file: 'content/about/_index.{{locale}}.md'
+            file: 'content/about/index.{{locale}}.md'
             i18n: true
             fields:
                 - {
@@ -77,10 +77,29 @@ collections:
                         name: 'header_photo_left'
                         widget: image
                         choose_url: false
+                        i18n: duplicate
+                      - label: 'Header Photo Left (Alt Text)'
+                        name: 'header_photo_left_alt'
+                        widget: string
+                        i18n: true
                       - label: 'Header Photo Right'
                         name: 'header_photo_right'
                         widget: image
                         choose_url: false
+                        i18n: duplicate
+                      - label: 'Header Photo Right (Alt Text)'
+                        name: 'header_photo_right_alt'
+                        widget: string
+                        i18n: true
+                      - label: 'Header Photo Mobile'
+                        name: 'header_photo_mobile'
+                        widget: image
+                        choose_url: false
+                        i18n: duplicate
+                      - label: 'Header Photo Mobile (Alt Text)'
+                        name: 'header_photo_mobile_alt'
+                        widget: string
+                        i18n: true
                 - label: 'Sections'
                   name: 'sections'
                   widget: list
@@ -127,7 +146,7 @@ collections:
                       widget: markdown
           - name: 'services'
             label: 'Services Page'
-            file: 'content/services/_index.{{locale}}.md'
+            file: 'content/services/index.{{locale}}.md'
             i18n: true
             fields:
                 - {
@@ -150,7 +169,7 @@ collections:
                   }
           - name: 'contact'
             label: 'Contact Page'
-            file: 'content/contact/_index.{{locale}}.md'
+            file: 'content/contact/index.{{locale}}.md'
             i18n: true
             fields:
                 - {

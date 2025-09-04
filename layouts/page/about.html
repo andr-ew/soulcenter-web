@@ -1,0 +1,28 @@
+{{ define "main" }}
+    <div class="hero">
+        {{ with .Params.header }}
+            <h1>{{ .page_header }}</h1>
+            {{ partial "picture" (dict
+                "src" (add "assets/" .header_photo_left)
+                "ctx" $
+                "alt" .header_photo_left_alt
+                "sizes" "max-width: 480px 100vw, 50vw"
+                )
+            }}
+            {{ partial "picture" (dict
+                "src" (add "assets/" .header_photo_left)
+                "ctx" $
+                "alt" .header_photo_left_alt
+                "sizes" "max-width: 480px 100vw, 50vw"
+                )
+            }}
+            {{ partial "picture" (dict
+                "src" (add "assets/" .header_photo_left)
+                "ctx" $
+                "alt" .header_photo_left_alt
+                "sizes" "max-width: 480px 100vw, 50vw"
+                )
+            }}
+        {{ end }}
+    </div>
+{{ end }}
