@@ -6,6 +6,9 @@ backend:
 media_folder: 'assets/images'
 public_folder: '/images'
 
+editor:
+    preview: false
+
 i18n:
     structure: multiple_files
     locales: [en, es]
@@ -24,45 +27,109 @@ collections:
             i18n: true
             fields:
                 - {
-                      label: 'Title',
-                      name: 'title',
-                      widget: 'string',
-                      i18n: true,
-                  }
-                - {
-                      label: 'Description',
+                      label: 'SEO metatag - description',
                       name: 'description',
                       widget: 'text',
                       i18n: true,
+                      hint: 'not visible on the page, shown on browser tab & in search results',
                   }
-                - {
-                      label: 'Hero Title',
-                      name: 'hero_title',
-                      widget: 'string',
-                      i18n: true,
-                  }
-                - {
-                      label: 'Hero Subtitle',
-                      name: 'hero_subtitle',
-                      widget: 'text',
-                      i18n: true,
-                  }
-                - {
-                      label: 'Body',
-                      name: 'body',
-                      widget: 'markdown',
-                      i18n: true,
-                  }
+                - label: 'About Alicia'
+                  name: 'about_alicia'
+                  widget: object
+                  i18n: true
+                  fields:
+                      - label: 'Header Photo Left'
+                        name: 'header_photo_left'
+                        widget: image
+                        choose_url: false
+                        i18n: duplicate
+                      - label: 'Header Photo Left (Alt Text)'
+                        name: 'header_photo_left_alt'
+                        widget: string
+                        i18n: true
+                      - label: 'Header Photo Right'
+                        name: 'header_photo_right'
+                        widget: image
+                        choose_url: false
+                        i18n: duplicate
+                      - label: 'Header Photo Right (Alt Text)'
+                        name: 'header_photo_right_alt'
+                        widget: string
+                        i18n: true
+                      - label: 'Content'
+                        name: 'content'
+                        widget: markdown
+                        i18n: true
+                - label: 'Three Services Overview Section'
+                  name: 'three_services'
+                  widget: object
+                  i18n: true
+                  fields:
+                      - label: 'Description'
+                        name: 'description'
+                        widget: markdown
+                        i18n: true
+                      - label: 'Service Names'
+                        name: 'service_names'
+                        widget: list
+                        i18n: duplicate
+                        allow_add: false
+                        fields:
+                            - label: 'Name'
+                              name: 'name'
+                              widget: string
+                              i18n: true
+                            - label: 'Name - Mobile'
+                              name: 'name_mobile'
+                              widget: string
+                              i18n: true
+                - label: 'Service Sections'
+                  name: 'service_names'
+                  widget: list
+                  i18n: duplicate
+                  # allow_add: false
+                  fields:
+                      - label: 'Title'
+                        name: 'title'
+                        widget: string
+                        i18n: true
+                      - label: 'Title - Mobile'
+                        name: 'title_mobile'
+                        widget: string
+                        i18n: true
+                      - label: 'Description'
+                        name: 'description'
+                        widget: markdown
+                        i18n: true
+                      - label: 'Sub-Service Names'
+                        name: 'sub_service_names'
+                        widget: list
+                        i18n: duplicate
+                        # allow_add: false
+                        fields:
+                            - label: 'Name'
+                              name: 'name'
+                              widget: string
+                              i18n: true
+                            - label: 'Name - Mobile'
+                              name: 'name_mobile'
+                              widget: string
+                              i18n: true
+                      - label: 'Photo Credit'
+                        name: 'photo_credit'
+                        widget: markdown
+                        i18n: true
           - name: 'about'
             label: 'About Page'
             file: 'content/about/index.{{locale}}.md'
             i18n: true
             fields:
                 - {
-                      label: 'SEO metatag - description - not visible',
+                      label: 'SEO metatag - description',
                       name: 'description',
                       widget: 'text',
                       i18n: true,
+                      hint: 'not visible on the page, shown on browser tab & in search results',
                   }
                 - label: 'Header'
                   name: 'header'
@@ -117,13 +184,18 @@ collections:
                             - label: 'Layout'
                               name: 'layout'
                               widget: select
+                              i18n: duplicate
                               options:
-                                  [
-                                      'Process',
-                                      'Specializations 1',
-                                      'Specializations 2',
-                                      'IFS',
-                                  ]
+                                  - { label: 'Process', value: 'process' }
+                                  - {
+                                        label: 'Specializations 1',
+                                        value: 'spec-1',
+                                    }
+                                  - {
+                                        label: 'Specializations 2',
+                                        value: 'spec-2',
+                                    }
+                                  - { label: 'IFS', value: 'ifs' }
                       - label: 'Image'
                         name: 'image'
                         widget: object
@@ -131,10 +203,21 @@ collections:
                             - label: 'Image'
                               name: 'image'
                               widget: image
+                              i18n: duplicate
+                            - label: 'Image Alt Text'
+                              name: 'image_alt'
+                              widget: string
+                              i18n: true
                             - label: 'Layout'
                               name: 'layout'
                               widget: select
-                              options: ['Process', 'Specializations 1']
+                              i18n: duplicate
+                              options:
+                                  - { label: 'Process', value: 'process' }
+                                  - {
+                                        label: 'Specializations 1',
+                                        value: 'spec-1',
+                                    }
                 - label: 'Certifications'
                   name: 'certifications'
                   widget: list

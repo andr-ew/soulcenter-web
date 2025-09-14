@@ -24,5 +24,30 @@
                 )
             }}
         {{ end }}
+        <div class="article-grid">
+            {{ range .Params.sections }}
+                <article class="about-article {{- .type -}} {{- .layout -}}">
+                    {{ if (eq .type "image") }}
+                        {{ partial "picture" (dict
+                            "src" (add "assets/" .image)
+                            "ctx" $
+                            "alt" .image_alt
+                            "sizes" "max-width: 480px 100vw, 50vw"
+                            )
+                        }}
+                    {{ else if (eq .type "text") }}
+                        {{ .text | markdownify }}
+                    {{ end }}
+                </article>
+            {{ end }}
+        </div>
+        <article class="certifications-container">
+            <h2>Certifications</h2>
+            {{ range .Params.certifications }}
+                <div class="certifications-section">
+                    {{ . | markdownify }}
+                </div>
+            {{ end }}
+        </article>
     </div>
 {{ end }}
